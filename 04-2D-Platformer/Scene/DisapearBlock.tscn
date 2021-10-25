@@ -3,13 +3,13 @@
 [ext_resource path="res://assets/breakingplatform1.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/DisapearBlock.gd" type="Script" id=2]
 
-[sub_resource type="RectangleShape2D" id=36]
+[sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 13.1847, 8.05554 )
 
-[sub_resource type="RectangleShape2D" id=37]
+[sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 15.9627, 5.67445 )
 
-[sub_resource type="Animation" id=38]
+[sub_resource type="Animation" id=3]
 resource_name = "destroyed"
 length = 0.6
 tracks/0/type = "value"
@@ -25,7 +25,7 @@ tracks/0/keys = {
 "values": [ 0, 1, 2, 3, 4, 5 ]
 }
 
-[sub_resource type="Animation" id=39]
+[sub_resource type="Animation" id=4]
 resource_name = "idle"
 length = 0.1
 tracks/0/type = "value"
@@ -52,14 +52,14 @@ vframes = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 7.62939e-06, -4.46457 )
-shape = SubResource( 36 )
+shape = SubResource( 1 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( 0.549606, -2.13306 )
-shape = SubResource( 37 )
+shape = SubResource( 2 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/destroyed = SubResource( 38 )
-anims/idle = SubResource( 39 )
+anims/destroyed = SubResource( 3 )
+anims/idle = SubResource( 4 )
