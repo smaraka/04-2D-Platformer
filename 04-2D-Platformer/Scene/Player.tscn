@@ -116,3 +116,15 @@ anims/Fall = SubResource( 2 )
 anims/Idle = SubResource( 3 )
 anims/Jump = SubResource( 4 )
 anims/Run = SubResource( 5 )
+
+[node name="Right" type="RayCast2D" parent="."]
+position = Vector2( -3.08328, 5.04538 )
+rotation = -1.5708
+enabled = true
+cast_to = Vector2( 0, 15 )
+
+[node name="Left" type="RayCast2D" parent="."]
+position = Vector2( -3.08328, 5.04538 )
+rotation = 1.5708
+enabled = true
+cast_to = Vector2( 0, 15 )

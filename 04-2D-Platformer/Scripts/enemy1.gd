@@ -1,10 +1,10 @@
 extends KinematicBody2D
 
-var start_position = Vector2(1499, 118)
+var start_position = Vector2(3287, 616)
 var player = null
 var nav = null
 
-var speed = 200
+var speed = 50
 
 func _ready():
 	position = start_position #[Global.save_data["level"] - 1]
