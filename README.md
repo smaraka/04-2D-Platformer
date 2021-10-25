@@ -1,8 +1,8 @@
 # 04-2D-Platformer
 This is my 2d platform project for project 04
+
 10-23-2021
 
-Description
 This is a simple 2d platformer game with 2 types of enemies. Goal is to reach to door.
 Controls are a and d to move
 w to jump
